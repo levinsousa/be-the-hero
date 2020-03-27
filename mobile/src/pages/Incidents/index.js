@@ -14,17 +14,24 @@ export default function Incidents(){
   const [pages , setPages] = useState(1)
   const [loading , setLoading] = useState(false)
 
-  if(loading){
-    return
-  }
+  
 
-  if(total > 0 && incidents.length === total){
-    return
-  }
-
-  setLoading(true)
+  
+  
 
   async function loadIncidents(){ 
+
+    setLoading(true)
+
+    if(loading){
+      return
+    }
+
+    if(total > 0 && incidents.length === total){
+      return
+    }
+  
+
     const response = await api.get('incidents', {
       params: { pages }
     })
