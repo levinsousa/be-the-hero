@@ -7,9 +7,9 @@
 
 ## Home Preview
 
-![ ](./preview/Home.png)
+![ ](./preview/HomeP.png)
 
 ## Profile Preview
 
-![ ](./preview/Profile.png)
+![ ](./preview/ProfileP.png)
 
